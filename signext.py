@@ -27,7 +27,7 @@ my_list = []
 def main():
     st.markdown(hide_menu,unsafe_allow_html=True)
     st.session_state['page'] = 'welcome_page'
-    st.sidebar.image('images\signext_logo.png')
+    # st.sidebar.image('images\signext_logo.png')
     selected = option_menu(None, ["Home", 'Start Expressing','About Us',"How to Use"], icons=['house','balloon-heart','file-earmark-person','patch-question'], menu_icon="cast", default_index=1,orientation="horizontal")
     if selected=="Home":
         st.session_state['page'] = 'welcome_page'
